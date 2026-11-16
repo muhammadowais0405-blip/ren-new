@@ -1,0 +1,18 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-caption);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.pending { background: var(--warning-bg); color: var(--warning); }
+.approved, .completed { background: var(--success-bg); color: var(--success); }
+.declined, .cancelled { background: var(--danger-bg); color: var(--danger); }
+.hidden, .unverified { background: var(--surface-muted); color: var(--text-secondary); }
+.verified { background: var(--info-bg); color: var(--info); }
+/* Amber is reserved for featured / promotion labels */
+.featured { background: var(--amber-100); color: #92400e; }
